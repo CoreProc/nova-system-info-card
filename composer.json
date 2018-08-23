@@ -1,0 +1,53 @@
+{
+    "name": "coreproc/nova-system-info-card",
+    "description": "A Laravel Nova card that shows you your system information.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "repositories": [
+      {
+        "type": "path",
+        "url": "../nova"
+      }
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Bautista",
+            "email": "chris.bautista@coreproc.ph",
+            "homepage": "https://coreproc.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "*"
+    },
+    "require-dev": {
+      "orchestra/testbench": "^3.6",
+      "phpunit/phpunit": "7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Coreproc\\NovaSystemInfoCard\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Coreproc\\NovaSystemInfoCard\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Coreproc\\NovaSystemInfoCard\\SystemInfoServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
