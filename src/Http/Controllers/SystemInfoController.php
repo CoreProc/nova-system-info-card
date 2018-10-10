@@ -28,7 +28,7 @@ class SystemInfoController
         ];
 
         if (! in_array(config('database.default'), $knownDatabases)) {
-            return 'Unkown';
+            return 'Unknown';
         }
 
         $results = DB::select(DB::raw("select version()"));
